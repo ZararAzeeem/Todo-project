@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/png" href="todo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="main-nav">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="dashboard.html" class="nav-item active">Dashboard</a>
+        </nav>
+
+        <header>
+            <h1><i class="fa-solid fa-chart-line"></i> My Dashboard</h1>
+            <p class="task-counter" id="stats-summary">Your task statistics</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p id="total-tasks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="completed-tasks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pending-tasks">0</p>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="tasksChart"></canvas>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

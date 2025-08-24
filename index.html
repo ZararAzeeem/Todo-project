@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo List</title>
+    <link rel="icon" type="image/png" href="todo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="main-nav">
+            <a href="index.html" class="nav-item active">Home</a>
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+        </nav>
+
+        <header>
+            <h1><i class="fa-solid fa-list-check"></i> My Tasks</h1>
+            <p class="task-counter">Loading tasks...</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="e.g., Learn about JavaScript">
+            <button id="add-btn" aria-label="Add Task"><i class="fa-solid fa-plus"></i> Add</button>
+        </div>
+
+        <div class="filter-group">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="pending">Pending</button>
+            <button data-filter="completed">Completed</button>
+        </div>
+
+        <ul class="todo-list">
+        </ul>
+
+        <button class="show-all-btn" style="display: none;">Show All Tasks</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Zarar Azeem. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
